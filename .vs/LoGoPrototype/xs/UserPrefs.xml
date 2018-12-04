@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{033F0285-DF91-4493-B928-6CAF7FDCE4AD}|Default">
+  <MonoDevelop.Ide.ItemProperties.LoGoPrototype.Android FirstBuild="True" PreferredExecutionTarget="Android.4_WVGA_Nexus_S_API_23" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoGoPrototype/App.xaml.cs">
+    <Files>
+      <File FileName="LoGoPrototype/Views/Main.xaml" Line="6" Column="1" />
+      <File FileName="LoGoPrototype/Views/Main.xaml.cs" Line="3" Column="21" />
+      <File FileName="LoGoPrototype/App.xaml.cs" Line="24" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LoGoPrototype.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
