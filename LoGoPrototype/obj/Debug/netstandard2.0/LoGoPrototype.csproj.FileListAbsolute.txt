@@ -2,7 +2,9 @@
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/bin/Debug/netstandard2.0/LoGoPrototype.dll
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/bin/Debug/netstandard2.0/LoGoPrototype.pdb
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/Views/Logo.xaml.g.cs
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/Views/Main.xaml.g.cs
+/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/Views/Settings.xaml.g.cs
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/LoGoPrototype.csproj.CoreCompileInputs.cache
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/LoGoPrototype.AssemblyInfoInputs.cache
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/LoGoPrototype.AssemblyInfo.cs

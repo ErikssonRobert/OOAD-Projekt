@@ -14,7 +14,7 @@ namespace LoGoPrototype.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Main.xaml")]
-    public partial class Main : global::Xamarin.Forms.ContentPage {
+    public partial class Main : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

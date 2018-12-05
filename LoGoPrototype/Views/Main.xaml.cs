@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace LoGoPrototype.Views
 {
-    public partial class Main : ContentPage
+    public partial class Main : TabbedPage
     {
         public Main()
         {
