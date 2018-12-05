@@ -6,11 +6,9 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="9*"/>
+                <RowDefinition Height="10*"/>
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" Text="Hello World!"/>
-            <Editor Grid.Row="1" Text="Hello World!"/>
+            <Editor Grid.Row="0" VerticalOptions="Fill" BackgroundColor="#123456" Text="Code"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

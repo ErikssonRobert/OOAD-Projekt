@@ -9,6 +9,7 @@ namespace LoGoPrototype.Views
     {
         public Logo()
         {
+            //Draw stuff
             InitializeComponent();
         }
     }
