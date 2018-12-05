@@ -8,7 +8,9 @@
     android:TabbedPage.ToolbarPlacement="Bottom"
     android:TabbedPage.BarItemColor="Black"
     android:TabbedPage.BarSelectedItemColor="Red">
-    <local:Settings Title="Settings"/>
-    <local:Logo Title="LoGo"/>
     
+    <local:Code Title="Code"/>
+    <local:Logo Title="LoGo"/>
+    <local:Settings Title="Settings"/>
+  
 </TabbedPage>

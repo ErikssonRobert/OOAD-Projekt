@@ -11,3 +11,5 @@
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/LoGoPrototype.dll
 /Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/LoGoPrototype.pdb
+/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/LoGoPrototype.csprojAssemblyReference.cache
+/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/obj/Debug/netstandard2.0/Views/Code.xaml.g.cs
