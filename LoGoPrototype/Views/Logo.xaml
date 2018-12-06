@@ -2,10 +2,8 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
     x:Class="LoGoPrototype.Views.Logo">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="LoGo"/>
-        </StackLayout>
-    </ContentPage.Content>
+     <skia:SKCanvasView x:Name="Draw"
+                       PaintSurface="Draw_Surface"/>
 </ContentPage>
