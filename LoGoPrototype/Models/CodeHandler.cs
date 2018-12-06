@@ -69,7 +69,7 @@ namespace LoGoPrototype.Models
             char c = code[index];
 
             // If space, ignore
-            if (c.Equals(' '))
+            if (c.Equals(' ') && RemainingTokens())
             {
                 index++;
                 return NextToken();
@@ -83,7 +83,7 @@ namespace LoGoPrototype.Models
             }
 
             // Otherwise, accumulate until a space
-            while (!c.Equals(' ') && RemainingTokens())
+            while ((!c.Equals(' ')) && RemainingTokens())
             {
                 token += c;
                 c = code[++index];
@@ -93,14 +93,14 @@ namespace LoGoPrototype.Models
 
         public string GetRepeat()
         {
-            while (!code[index].Equals('[') && RemainingTokens()) { }
-
+            index--;
+            while ((!Code[index++].Equals('[')) && RemainingTokens()) { }
             int start = index;
-            int bracketCount = 1;
 
-            while (bracketCount > 0 && RemainingTokens())
+            int bracketCount = 1;
+            while ((bracketCount > 0) && RemainingTokens())
             {
-                char c = code[index++];
+                char c = Code[index++];
                 if (c.Equals('['))
                 {
                     bracketCount++;
@@ -110,12 +110,13 @@ namespace LoGoPrototype.Models
                 }
             }
             int end = index;
-            return Code.Substring(start, end - 1);
+            int length = end - start;
+            return Code.Substring(start, length);
         }
 
         private bool RemainingTokens()
         {
-            return !code.Equals(null) && index < code.Length;
+            return (!code.Equals(null)) && index < code.Length - 1;
         }
     }
 }
