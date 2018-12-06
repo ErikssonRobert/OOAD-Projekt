@@ -16,8 +16,10 @@
             <Editor 
                 Text="{Binding CodeString, Mode=TwoWay}"
                 Grid.Row="0" 
+                TextColor="White"
+                
                 VerticalOptions="Fill" 
-                BackgroundColor="#123456">
+                BackgroundColor="#696969">
             </Editor>
         </Grid>
     </ContentPage.Content>

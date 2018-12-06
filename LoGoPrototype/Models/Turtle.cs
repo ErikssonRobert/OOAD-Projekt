@@ -15,7 +15,7 @@ namespace LoGoPrototype.Models
             {
                 Style = SKPaintStyle.Stroke,
                 Color = SKColors.White,
-                StrokeWidth = 5,
+                StrokeWidth = 2,
                 StrokeCap = SKStrokeCap.Round,
                 IsAntialias = true
         };
