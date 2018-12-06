@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{033F0285-DF91-4493-B928-6CAF7FDCE4AD}|Default">
-  <MonoDevelop.Ide.ItemProperties.LoGoPrototype.Android PreferredExecutionTarget="Android.ce10160a653a761404" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoGoPrototype/Views/Code.xaml">
+  <MonoDevelop.Ide.ItemProperties.LoGoPrototype.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoGoPrototype/Views/Logo.xaml.cs">
     <Files>
-      <File FileName="LoGoPrototype/Views/Code.xaml" Line="11" Column="17" />
+      <File FileName="LoGoPrototype/ViewModels/LogoViewModel.cs" Line="11" Column="16" />
+      <File FileName="LoGoPrototype/Models/Turtle.cs" Line="23" Column="9" />
+      <File FileName="LoGoPrototype/Views/Logo.xaml.cs" Line="57" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
