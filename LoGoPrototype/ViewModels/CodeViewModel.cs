@@ -11,6 +11,7 @@ namespace LoGoPrototype.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         private CodeHandler codeHandler;
+        //private Turtle turtle;
         private string codeString;
         public string CodeString
         {
@@ -24,7 +25,7 @@ namespace LoGoPrototype.ViewModels
                 {
                     SetProperty(ref codeString, value.ToLower());
                     codeHandler = new CodeHandler(CodeString);
-                    codeHandler.Parse();
+                    Turtle.commands = codeHandler.Parse();
                 }
             }
         }
@@ -32,7 +33,7 @@ namespace LoGoPrototype.ViewModels
         // Constructor
         public CodeViewModel()
         {
-            CodeString = "FD 50 RT 67 repeat 3 [ fd 45 rt 50 ]";
+            CodeString = "fd 100 rt 90 fd 150 rt 90 fd 50 lt 90 fd 150 rt 90 fd 50";
         }
 
         // Default copy/pasted code

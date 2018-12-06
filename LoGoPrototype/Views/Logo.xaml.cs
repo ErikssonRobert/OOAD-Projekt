@@ -5,6 +5,7 @@ using SkiaSharp;
 using SkiaSharp.Views.Forms;
 
 using Xamarin.Forms;
+using Command = LoGoPrototype.Models.Command;
 
 namespace LoGoPrototype.Views
 {
@@ -15,40 +16,9 @@ namespace LoGoPrototype.Views
         const string right = "rt";
         const string left = "lt";
 
-        SKPoint x;
-        SKPoint y;
-        Turtle turtle = new Turtle();
-
-        List<string> list = new List<string>();
-
-        public void Contructor(SKPoint x, SKPoint y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-
         public Logo()
         {
-            //Draw stuff
             InitializeComponent();
-            list.Add(forward);
-            list.Add(right);
-            list.Add(forward);
-            list.Add(right);
-            list.Add(forward);
-            list.Add(right);
-            list.Add(forward);
-
-            list.Add(left);
-            list.Add(forward);
-
-            list.Add(forward);
-            list.Add(left);
-            list.Add(forward);
-            list.Add(left);
-            list.Add(forward);
-            list.Add(left);
-            list.Add(forward);
         }
 
         private void Draw_Surface(object sender,  SKPaintSurfaceEventArgs e)
@@ -57,40 +27,54 @@ namespace LoGoPrototype.Views
             SKSurface surface = e.Surface;
             SKCanvas canvas = surface.Canvas;
             canvas.Translate(e.Info.Width / 2, e.Info.Height / 2);
+            canvas.RotateDegrees(-90);
             canvas.Clear(SKColors.Red);
+            Execute(Turtle.commands);
 
-            float dist = 100;
-
-            void Forward(float distance, SKPaint paint)
+            void Forward(int amt)
             {
-                canvas.DrawLine(0, 0, distance, 0, paint);
-                canvas.Translate(distance, 0);
+                canvas.DrawLine(0, 0, amt, 0, Turtle.StrokePaint());
+                canvas.Translate(amt, 0);
             }
 
-            void Rotate(float angle)
+            void Rotate(int angle)
             {
                 canvas.RotateDegrees(angle);
             }
 
-            foreach (string input in list)
+            void Execute(List<Command> cmds)
             {
-                switch(input)
+                foreach (Command cmd in cmds)
                 {
-                    case forward:
-                        Forward(dist, turtle.StrokePaint());
-                        break;
-                    case backward:
-                        Forward(-dist, turtle.StrokePaint());
-                        break;
-                    case right:
-                        Rotate(90f);
-                        break;
-                    case left:
-                        Rotate(-90f);
-                        break;
+                    if (cmd.Action.Equals("repeat"))
+                    {
+                        for (int i = 0; i < int.Parse(cmd.Amount); i++)
+                        {
+                            Execute(cmd.Commands);
+                        }
+                    } else
+                    {
+                        switch (cmd.Action)
+                        {
+                            case forward:
+                                Forward(int.Parse(cmd.Amount));
+                                break;
+                            case backward:
+                                Forward(-int.Parse(cmd.Amount));
+                                break;
+                            case right:
+                                Rotate(int.Parse(cmd.Amount));
+                                break;
+                            case left:
+                                Rotate(-int.Parse(cmd.Amount));
+                                break;
+                        }
+                    }
+
                 }
             }
-        }
 
+            // slutet
+        }
     }
 }

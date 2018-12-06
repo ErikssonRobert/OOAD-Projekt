@@ -28,5 +28,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="ViewModels\LogoViewModel.cs" />
+    <Compile Remove="ViewModels\CodeHandler.cs" />
   </ItemGroup>
 </Project>

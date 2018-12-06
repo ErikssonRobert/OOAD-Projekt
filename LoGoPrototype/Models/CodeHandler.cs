@@ -56,10 +56,10 @@ namespace LoGoPrototype.Models
                     commands.Add(cmd);
                 }
             }
-            foreach (Command cmd in commands)
-            {
-                Console.WriteLine(cmd.Action + " " + cmd.Amount);
-            }
+            //foreach (Command cmd in commands)
+            //{
+            //    Console.WriteLine(cmd.Action + " " + cmd.Amount);
+            //}
             return commands;
         }
 

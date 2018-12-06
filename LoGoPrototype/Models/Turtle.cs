@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using SkiaSharp;
 
 namespace LoGoPrototype.Models
 {
     public class Turtle
     {
-        public SKPaint StrokePaint()
+        public static List<Command> commands = new List<Command>();
+
+        public static SKPaint StrokePaint()
         {
 
             SKPaint paint = new SKPaint
@@ -16,20 +19,6 @@ namespace LoGoPrototype.Models
                 StrokeCap = SKStrokeCap.Round,
                 IsAntialias = true
         };
-            return paint;
-        }
-
-        public SKPaint StrokePaint20()
-        {
-
-            SKPaint paint = new SKPaint
-            {
-                Style = SKPaintStyle.Stroke,
-                Color = SKColors.White,
-                StrokeWidth = 20,
-                StrokeCap = SKStrokeCap.Round,
-                IsAntialias = true
-            };
             return paint;
         }
     }
