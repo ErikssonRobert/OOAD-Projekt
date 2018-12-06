@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{033F0285-DF91-4493-B928-6CAF7FDCE4AD}|Default">
-  <MonoDevelop.Ide.ItemProperties.LoGoPrototype.Android PreferredExecutionTarget="Android.ce10160a653a761404" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoGoPrototype/Views/Code.xaml">
+  <MonoDevelop.Ide.ItemProperties.LoGoPrototype.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoGoPrototype/Models/CodeHandler.cs">
     <Files>
-      <File FileName="LoGoPrototype/Views/Code.xaml" Line="11" Column="17" />
+      <File FileName="LoGoPrototype/Views/Code.xaml" Line="15" Column="1" />
+      <File FileName="LoGoPrototype/Models/CodeHandler.cs" Line="18" Column="16" />
+      <File FileName="LoGoPrototype/Models/Command.cs" Line="44" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
