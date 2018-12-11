@@ -937,19 +937,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/mrx/.nuget/packages/": {}
+    "/Users/kristofferknape/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype.Android/LoGoPrototype.Android.csproj",
+      "projectUniqueName": "/Users/kristofferknape/Documents/ITHögskolan/Kurser/11. ObjektorienteradAnalysDesign2017/Labbar/Labb2/OOAD-Projekt/LoGoPrototype.Android/LoGoPrototype.Android.csproj",
       "projectName": "LoGoPrototype.Android",
-      "projectPath": "/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype.Android/LoGoPrototype.Android.csproj",
-      "packagesPath": "/Users/mrx/.nuget/packages/",
-      "outputPath": "/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype.Android/obj",
+      "projectPath": "/Users/kristofferknape/Documents/ITHögskolan/Kurser/11. ObjektorienteradAnalysDesign2017/Labbar/Labb2/OOAD-Projekt/LoGoPrototype.Android/LoGoPrototype.Android.csproj",
+      "packagesPath": "/Users/kristofferknape/.nuget/packages/",
+      "outputPath": "/Users/kristofferknape/Documents/ITHögskolan/Kurser/11. ObjektorienteradAnalysDesign2017/Labbar/Labb2/OOAD-Projekt/LoGoPrototype.Android/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mrx/.config/NuGet/NuGet.Config"
+        "/Users/kristofferknape/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"
@@ -960,8 +960,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/LoGoPrototype.csproj": {
-              "projectPath": "/Users/mrx/Desktop/App17/Objectorienterad analys/projekt/LoGoPrototype/LoGoPrototype/LoGoPrototype.csproj"
+            "/Users/kristofferknape/Documents/ITHögskolan/Kurser/11. ObjektorienteradAnalysDesign2017/Labbar/Labb2/OOAD-Projekt/LoGoPrototype/LoGoPrototype.csproj": {
+              "projectPath": "/Users/kristofferknape/Documents/ITHögskolan/Kurser/11. ObjektorienteradAnalysDesign2017/Labbar/Labb2/OOAD-Projekt/LoGoPrototype/LoGoPrototype.csproj"
             }
           }
         }

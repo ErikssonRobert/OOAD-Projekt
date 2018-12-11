@@ -5,12 +5,24 @@
     xmlns:local="clr-namespace:LoGoPrototype.Views;"
     x:Class="LoGoPrototype.Views.Main"
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     android:TabbedPage.ToolbarPlacement="Bottom"
     android:TabbedPage.BarItemColor="Black"
-    android:TabbedPage.BarSelectedItemColor="Red">
+    android:TabbedPage.BarSelectedItemColor="Red"
+    ios:Page.LargeTitleDisplay="Never"
+    ios:Page.UseSafeArea="true">
+   
     
-    <local:Code Title="Code"/>
-    <local:Logo Title="LoGo"/>
-    <local:Settings Title="Settings"/>
+    <NavigationPage Title="Code" Icon="code.png">
+        <x:Arguments>
+             <local:Code Title="Code"/>
+        </x:Arguments>
+    </NavigationPage>
+    
+    <NavigationPage Title="LoGo" Icon="barcode.png">
+        <x:Arguments>
+            <local:Logo Title="LoGo"/>
+        </x:Arguments>
+    </NavigationPage>
   
 </TabbedPage>
