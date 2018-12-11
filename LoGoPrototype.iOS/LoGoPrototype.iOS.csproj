@@ -140,6 +140,12 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\code.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tools.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\barcode.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\barcode.imageset\barcode.png" />
+    <ImageAsset Include="Assets.xcassets\tools.imageset\tools.png" />
+    <ImageAsset Include="Assets.xcassets\code.imageset\code.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -156,5 +162,10 @@
       <Project>{953104AC-ED7E-44EA-8771-E9533901F11A}</Project>
       <Name>LoGoPrototype</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\code.imageset\" />
+    <Folder Include="Assets.xcassets\tools.imageset\" />
+    <Folder Include="Assets.xcassets\barcode.imageset\" />
   </ItemGroup>
 </Project>

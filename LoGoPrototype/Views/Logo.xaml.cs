@@ -75,7 +75,8 @@ namespace LoGoPrototype.Views
                 }
             }
 
-            // slutet
         }
+
     }
+     
 }

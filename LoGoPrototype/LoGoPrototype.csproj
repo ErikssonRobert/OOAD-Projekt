@@ -17,7 +17,16 @@
     <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
+<<<<<<< HEAD
     <Folder Include="Validation\" />
+=======
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\barcode.png" />
+    <EmbeddedResource Include="Resources\code.png" />
+    <EmbeddedResource Include="Resources\tools.png" />
+>>>>>>> a9481bb0d6db41e979cacda4a2ca84542a5d2a74
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="MainPage.xaml">
@@ -31,5 +40,10 @@
     <Compile Remove="ViewModels\LogoViewModel.cs" />
     <Compile Remove="ViewModels\CodeHandler.cs" />
     <Compile Remove="Validation\IValidity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\barcode.png" />
+    <None Remove="Resources\code.png" />
+    <None Remove="Resources\tools.png" />
   </ItemGroup>
 </Project>

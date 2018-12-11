@@ -8,8 +8,8 @@ namespace LoGoPrototype.Models
     public class CodeHandler
     {
         private int index;
-        private  string code;
-        public  string Code 
+        private string code;
+        public string Code 
         { 
             get
             {
