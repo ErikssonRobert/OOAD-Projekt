@@ -3,25 +3,33 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using LoGoPrototype.Models;
+using LoGoPrototype.Validation;
 
 namespace LoGoPrototype.ViewModels
 {
     public class CodeViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
+        private IsNotNullOrEmptyRule<string> rule;
         private CodeHandler codeHandler;
-        //private Turtle turtle;
-        private string codeString;
-        public string CodeString
+        public bool IsValid
         {
             get
             {
-                return codeString;
+                return ValidateCodeString(CodeString);
             }
             set
             {
-                if (codeString != value)
+                IsValid = value;
+            }
+        }
+        private string codeString;
+        public string CodeString
+        {
+            get => codeString;
+            set
+            {
+                if (codeString != value && ValidateCodeString(value))
                 {
                     SetProperty(ref codeString, value.ToLower());
                     codeHandler = new CodeHandler(CodeString);
@@ -33,7 +41,22 @@ namespace LoGoPrototype.ViewModels
         // Constructor
         public CodeViewModel()
         {
+            AddValidationRule();
             CodeString = "repeat 36 [ lt 10 fd 1 repeat 120 [ fd 2 rt 3 ] ]";
+        }
+
+        // Validation
+        private bool ValidateCodeString(string s)
+        {
+            return rule.Check(s);
+        }
+
+        private void AddValidationRule()
+        {
+            rule = new IsNotNullOrEmptyRule<string>
+            {
+                ValidationMessage = "Please add LoGo code."
+            };
         }
 
         // Default copy/pasted code

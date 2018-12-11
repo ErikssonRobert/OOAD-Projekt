@@ -17,6 +17,7 @@
     <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
+    <Folder Include="Validation\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="MainPage.xaml">
@@ -29,5 +30,6 @@
   <ItemGroup>
     <Compile Remove="ViewModels\LogoViewModel.cs" />
     <Compile Remove="ViewModels\CodeHandler.cs" />
+    <Compile Remove="Validation\IValidity.cs" />
   </ItemGroup>
 </Project>

@@ -20,7 +20,6 @@ namespace LoGoPrototype.Models
                 code = value;
                 Console.WriteLine("...code in codehandler...");
                 Console.WriteLine(code);
-                //Console.WriteLine(Parse());
             }
         }
 
@@ -56,10 +55,6 @@ namespace LoGoPrototype.Models
                     commands.Add(cmd);
                 }
             }
-            //foreach (Command cmd in commands)
-            //{
-            //    Console.WriteLine(cmd.Action + " " + cmd.Amount);
-            //}
             return commands;
         }
 

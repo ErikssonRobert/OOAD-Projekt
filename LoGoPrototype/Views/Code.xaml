@@ -2,6 +2,9 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    xmlns:behaviors="clr-namespace:LoGoPrototype.Validation"
     x:Class="LoGoPrototype.Views.Code"
     xmlns:vm="clr-namespace:LoGoPrototype.ViewModels;assembly=LoGoPrototype">
     <!-- Binda ViewModel till View -->
@@ -17,10 +20,18 @@
                 Text="{Binding CodeString, Mode=TwoWay}"
                 Grid.Row="0" 
                 TextColor="White"
-                
                 VerticalOptions="Fill" 
                 BackgroundColor="#696969">
             </Editor>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
+<!-- <Editor.Triggers>
+                    <DataTrigger
+                        TargetType="Editor"
+                        Binding="{Binding IsValid}"
+                        Value="false">
+                        <Setter Property="TextColor"
+                                Value="#ee0000"/>
+                    </DataTrigger>
+                </Editor.Triggers> -->
