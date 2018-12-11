@@ -33,7 +33,7 @@ namespace LoGoPrototype.ViewModels
         // Constructor
         public CodeViewModel()
         {
-            CodeString = "fd 100 rt 90 fd 150 rt 90 fd 50 lt 90 fd 150 rt 90 fd 50";
+            CodeString = "repeat 36 [ lt 10 fd 1 repeat 120 [ fd 2 rt 3 ] ]";
         }
 
         // Default copy/pasted code

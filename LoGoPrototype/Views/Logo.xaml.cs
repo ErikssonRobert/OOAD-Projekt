@@ -28,7 +28,12 @@ namespace LoGoPrototype.Views
             SKCanvas canvas = surface.Canvas;
             canvas.Translate(e.Info.Width / 2, e.Info.Height / 2);
             canvas.RotateDegrees(-90);
+<<<<<<< HEAD
             canvas.Clear(SKColors.Gray);
+=======
+            canvas.Scale(5);
+            canvas.Clear(SKColors.DimGray);
+>>>>>>> 93ffe54d5b526940d3abda48cf112ad723dcb45e
             Execute(Turtle.commands);
 
             void Forward(int amt)
