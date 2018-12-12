@@ -13,6 +13,10 @@ namespace LoGoPrototype.Views
         public Main()
         {
             InitializeComponent();
+            this.CurrentPageChanged += (object sender, EventArgs e) =>
+            (Children[1] as Logo).Refresh();
         }
+
+
     }
 }
