@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 using LoGoPrototype.Models;
 using LoGoPrototype.Validation;
+using Xamarin.Forms;
 
 namespace LoGoPrototype.ViewModels
 {
@@ -12,6 +13,21 @@ namespace LoGoPrototype.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         private IsNotNullOrEmptyRule<string> rule;
         private CodeHandler codeHandler;
+        private int amountString;
+        public int AmountString
+        {
+            get
+            {
+                return amountString;
+            }
+            set
+            {
+                if (amountString != value)
+                {
+                    SetProperty(ref amountString, value);
+                }
+            }
+        }
         public bool IsValid
         {
             get
@@ -35,6 +51,8 @@ namespace LoGoPrototype.ViewModels
                     codeHandler = new CodeHandler(CodeString);
                     Turtle.commands = codeHandler.Parse();
                 }
+                else if (value == "")
+                    SetProperty(ref codeString, value.ToLower());
             }
         }
 
@@ -42,7 +60,12 @@ namespace LoGoPrototype.ViewModels
         public CodeViewModel()
         {
             AddValidationRule();
-            CodeString = "repeat 36 [ lt 10 fd 1 repeat 120 [ fd 2 rt 3 ] ]";
+            CodeString = "";
+
+            MovementCommand = new Command<string>(
+                AddMovementToCode,
+                obj => { return true; }
+            );
         }
 
         // Validation
@@ -57,6 +80,34 @@ namespace LoGoPrototype.ViewModels
             {
                 ValidationMessage = "Please add LoGo code."
             };
+        }
+
+        // Commands
+        public ICommand MovementCommand { private set; get; }
+
+        public void AddMovementToCode(string s)
+        {
+            switch (s)
+            {
+                case "fd":
+                    CodeString += string.Format("fd {0} ", AmountString);
+                    break;
+                case "bd":
+                    CodeString += string.Format("bd {0} ", AmountString);
+                    break;
+                case "lt":
+                    CodeString += string.Format("lt {0} ", AmountString);
+                    break;
+                case "rt":
+                    CodeString += string.Format("rt {0} ", AmountString);
+                    break;
+                case "repeat":
+                    CodeString += string.Format("repeat {0} [ ", AmountString);
+                    break;
+                case "endrepeat":
+                    CodeString += string.Format("] ");
+                    break;
+            }
         }
 
         // Default copy/pasted code

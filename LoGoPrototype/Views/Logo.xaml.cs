@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using LoGoPrototype.Models;
 using SkiaSharp;
 using SkiaSharp.Views.Forms;
-
 using Xamarin.Forms;
 using Command = LoGoPrototype.Models.Command;
 
@@ -21,15 +20,19 @@ namespace LoGoPrototype.Views
             InitializeComponent();
         }
 
+        public void Refresh()
+        {
+            Draw.InvalidateSurface();
+        }
+
         private void Draw_Surface(object sender,  SKPaintSurfaceEventArgs e)
         {
-
             SKSurface surface = e.Surface;
             SKCanvas canvas = surface.Canvas;
+            canvas.Clear(SKColors.DimGray);
             canvas.Translate(e.Info.Width / 2, e.Info.Height / 2);
             canvas.RotateDegrees(-90);
             canvas.Scale(5);
-            canvas.Clear(SKColors.DimGray);
             Execute(Turtle.commands);
 
             void Forward(int amt)

@@ -12,17 +12,8 @@
     ios:Page.LargeTitleDisplay="Never"
     ios:Page.UseSafeArea="true">
    
-    
-    <NavigationPage Title="Code" Icon="code.png">
-        <x:Arguments>
-             <local:Code Title="Code"/>
-        </x:Arguments>
-    </NavigationPage>
-    
-    <NavigationPage Title="LoGo" Icon="barcode.png">
-        <x:Arguments>
-            <local:Logo Title="LoGo"/>
-        </x:Arguments>
-    </NavigationPage>
-  
+   <local:Code Title="Code" Icon="code.png"/>
+   <local:Logo Title="LoGo" Icon="barcode.png"/>
+   <local:Settings Title="Settings" Icon="tools.png"/>
+
 </TabbedPage>
