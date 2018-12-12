@@ -7,19 +7,20 @@ namespace LoGoPrototype.Models
     public class Turtle
     {
         public static List<Command> commands = new List<Command>();
+        public static SKPaint SPaint { get; set; } = new SKPaint();
 
-        public static SKPaint StrokePaint()
+        public static SKPaint StrokePaint(SKColor color)
         {
-
-            SKPaint paint = new SKPaint
+            SPaint = new SKPaint
             {
                 Style = SKPaintStyle.Stroke,
-                Color = SKColors.White,
+                Color = color,
                 StrokeWidth = 2,
                 StrokeCap = SKStrokeCap.Round,
                 IsAntialias = true
-        };
-            return paint;
+            };
+
+            return SPaint;
         }
     }
 }

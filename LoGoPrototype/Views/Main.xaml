@@ -24,5 +24,11 @@
             <local:Logo Title="LoGo"/>
         </x:Arguments>
     </NavigationPage>
+    
+     <NavigationPage Title="Settings" Icon="tools.png">
+        <x:Arguments>
+            <local:Settings Title="Settings"/>
+        </x:Arguments>
+    </NavigationPage>
   
 </TabbedPage>

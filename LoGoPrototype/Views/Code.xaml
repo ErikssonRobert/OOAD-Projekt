@@ -26,12 +26,3 @@
         </Grid>
     </ContentPage.Content>
 </ContentPage>
-<!-- <Editor.Triggers>
-                    <DataTrigger
-                        TargetType="Editor"
-                        Binding="{Binding IsValid}"
-                        Value="false">
-                        <Setter Property="TextColor"
-                                Value="#ee0000"/>
-                    </DataTrigger>
-                </Editor.Triggers> -->

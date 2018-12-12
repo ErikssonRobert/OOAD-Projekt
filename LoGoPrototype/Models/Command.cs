@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using SkiaSharp;
 
 namespace LoGoPrototype.Models
 {
@@ -18,6 +19,7 @@ namespace LoGoPrototype.Models
             }
         }
         private string action;
+
         public string Action
         {
             get
@@ -41,5 +43,6 @@ namespace LoGoPrototype.Models
             this.action = action;
             this.Amount = amount;
         }
+
     }
 }

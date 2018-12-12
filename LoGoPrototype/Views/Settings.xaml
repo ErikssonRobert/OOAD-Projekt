@@ -1,15 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
-    xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="LoGoPrototype.Views.Settings"
-    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    ios:Page.LargeTitleDisplay="Never"
-    ios:Page.UseSafeArea="true"
-    >
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="LoGoPrototype.Views.Settings" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.LargeTitleDisplay="Never" 
+             ios:Page.UseSafeArea="true"
+             BackgroundColor="#696969">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Settings"/>
+            <StackLayout VerticalOptions="Start">
+            <Label Text="Change line color" 
+                   FontSize = "20" 
+                   XAlign="Center"
+                   Margin="8, 8, 8, 8"/>
+            
+            <Button Text="Red" 
+                    FontSize = "20" 
+                    BackgroundColor="Red" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    TextColor="White" 
+                    Margin="8, 8, 8, 8"
+                    Command="{Binding ChangeColorCommand}"
+                    CommandParameter="red"/>
+            
+            <Button Text="Blue" 
+                    FontSize = "20" 
+                    BackgroundColor="Blue" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    TextColor="White" 
+                    Margin="8, 0, 8, 8"
+                    Command="{Binding ChangeColorCommand}"
+                    CommandParameter="blue"/>
+            
+            <Button Text="Green" 
+                    FontSize = "20" 
+                    BackgroundColor="Green" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    TextColor="White" 
+                    Margin="8, 0, 8, 8"
+                    Command="{Binding ChangeColorCommand}"
+                    CommandParameter="green"/>
+           
+            <Button Text="Yellow" 
+                    FontSize = "20" 
+                    BackgroundColor="Yellow" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    TextColor="Black" 
+                    Margin="8, 0, 8, 8"
+                    Command="{Binding ChangeColorCommand}"
+                    CommandParameter="yellow"/>
+            
+            <Button Text="White" 
+                    FontSize = "20" 
+                    BackgroundColor="White" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    TextColor="Black" 
+                    Margin="8, 0, 8, 8"
+                    Command="{Binding ChangeColorCommand}"
+                    CommandParameter="white"/>
+            
+            <Button Text="Black" 
+                    FontSize = "20" 
+                    BackgroundColor="Black" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    TextColor="White" 
+                    Margin="8, 0, 8, 8"
+                    Command="{Binding ChangeColorCommand}"
+                    CommandParameter="black"/>
+             </StackLayout>
+             
+            <StackLayout VerticalOptions="End">
+                <Button Text="Current color" 
+                    FontSize = "20" 
+                    BorderColor="Black" 
+                    BorderWidth="1" 
+                    TextColor="Gray" 
+                    Margin="8, 0, 8, 8"/>
+              
+             </StackLayout>
+
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

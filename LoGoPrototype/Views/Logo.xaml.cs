@@ -34,7 +34,7 @@ namespace LoGoPrototype.Views
 
             void Forward(int amt)
             {
-                canvas.DrawLine(0, 0, amt, 0, Turtle.StrokePaint());
+                canvas.DrawLine(0, 0, amt, 0, Turtle.SPaint);
                 canvas.Translate(amt, 0);
             }
 
