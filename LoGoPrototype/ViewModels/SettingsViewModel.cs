@@ -13,6 +13,19 @@ namespace LoGoPrototype.ViewModels
     public class SettingsViewModel : INotifyPropertyChanged
     {
         public ICommand ChangeColorCommand { get; private set; }
+        private Color currentColor;
+        public Color CurrentColor
+        {
+            get
+            {
+                return currentColor;
+            }
+            set
+            {
+                SetProperty(ref currentColor, value);
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public SettingsViewModel()
@@ -27,26 +40,32 @@ namespace LoGoPrototype.ViewModels
                 case "red":
                     Turtle.StrokePaint(SKColors.Red);
                     Console.WriteLine("Red");
+                    CurrentColor = Color.Red;
                     break;
                 case "blue":
                     Turtle.StrokePaint(SKColors.Blue);
                     Console.WriteLine("Blue");
+                    CurrentColor = Color.Blue;
                     break;
                 case "green":
                     Turtle.StrokePaint(SKColors.Green);
                     Console.WriteLine("Green");
+                    CurrentColor = Color.Green;
                     break;
                 case "yellow":
                     Turtle.StrokePaint(SKColors.Yellow);
                     Console.WriteLine("Yellow");
+                    CurrentColor = Color.Yellow;
                     break;
                 case "white":
                     Turtle.StrokePaint(SKColors.White);
                     Console.WriteLine("White");
+                    CurrentColor = Color.White;
                     break;
                 case "black":
                     Turtle.StrokePaint(SKColors.Black);
                     Console.WriteLine("Black");
+                    CurrentColor = Color.Black;
                     break;
             }
         }

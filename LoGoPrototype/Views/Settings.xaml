@@ -5,9 +5,13 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
              ios:Page.LargeTitleDisplay="Never" 
              ios:Page.UseSafeArea="true"
-             BackgroundColor="#696969">
+             BackgroundColor="#696969"
+             xmlns:vm="clr-namespace:LoGoPrototype.ViewModels;assembly=LoGoPrototype">
+    <ContentPage.BindingContext>
+        <vm:SettingsViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
+        <Grid>
             <StackLayout VerticalOptions="Start">
             <Label Text="Change line color" 
                    FontSize = "20" 
@@ -22,7 +26,8 @@
                     TextColor="White" 
                     Margin="8, 8, 8, 8"
                     Command="{Binding ChangeColorCommand}"
-                    CommandParameter="red"/>
+                    CommandParameter="red"
+                    />
             
             <Button Text="Blue" 
                     FontSize = "20" 
@@ -76,16 +81,17 @@
              </StackLayout>
              
             <StackLayout VerticalOptions="End">
-                <Button Text="Current color" 
-                    FontSize = "20" 
+                <Label Text="Current color" 
+                   FontSize = "20" 
+                   XAlign="Center"
+                   Margin="8, 8, 8, 8"/>
+                <Button 
+                    BackgroundColor="{Binding CurrentColor}"
+                    FontSize = "20"
                     BorderColor="Black" 
                     BorderWidth="1" 
-                    TextColor="Gray" 
                     Margin="8, 0, 8, 8"/>
-              
              </StackLayout>
-
-        </StackLayout>
-
+         </Grid>
     </ContentPage.Content>
 </ContentPage>
