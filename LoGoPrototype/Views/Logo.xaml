@@ -6,7 +6,8 @@
     x:Class="LoGoPrototype.Views.Logo"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     ios:Page.LargeTitleDisplay="Never"
-    ios:Page.UseSafeArea="true">
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#696969">
      <skia:SKCanvasView x:Name="Draw"
                        PaintSurface="Draw_Surface"/>
 </ContentPage>

@@ -6,7 +6,8 @@
     ios:Page.UseSafeArea="true"
     xmlns:behaviors="clr-namespace:LoGoPrototype.Validation"
     x:Class="LoGoPrototype.Views.Code"
-    xmlns:vm="clr-namespace:LoGoPrototype.ViewModels;assembly=LoGoPrototype">
+    xmlns:vm="clr-namespace:LoGoPrototype.ViewModels;assembly=LoGoPrototype"
+    BackgroundColor="#696969">
     <!-- Binda ViewModel till View -->
     <ContentPage.BindingContext>
         <vm:CodeViewModel/>
